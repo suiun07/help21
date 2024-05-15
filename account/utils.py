@@ -15,8 +15,8 @@ def send_activation_code(email, activation_code):
     send_mail(
         'Account Activation',
         message,
-        'admin@admin.com'
+        'admin@admin.com',
         [email],
         html_message=msg_html,
-        fail_silenty=False
+        # fail_silenty=False
     )
